@@ -1,0 +1,10 @@
+{
+  "extends": ["config:base", ":timezone(Asia/Tokyo)"],
+  "packageRules": [
+    {
+      "groupName": "action-slack",
+      "matchPackagePatterns": ["^8398a7/action-slack$"],
+      "allowedVersions": "45986a1c69e93353648c176ce49eecddebebf64e"
+    }
+  ]
+}
