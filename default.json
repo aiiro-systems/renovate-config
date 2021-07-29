@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":timezone(Asia/Tokyo)", ":preserveSemverRanges", ":automergeTypes", ":automergeMinor"],
+  "baseBranches": ["develop"],
   "ignoreDeps": ["8398a7/action-slack"]
 }
