@@ -1,0 +1,35 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14
+
+    - id: cache-node-modules
+      name: Cache node modules
+      uses: actions/cache@v2
+      with:
+        path: ./node_modules
+        key: node_modules-${{ hashFiles('package-lock.json') }}
+      
+    - name: Run npm ci
+      if: ${{ steps.cache-node-modules.outputs.cache-hit }} != 'true'
+      run: |
+        npm ci
+
+    - name: Test
+      run: |
+        npm run test

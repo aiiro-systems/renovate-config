@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "validate": "RENOVATE_CONFIG_FILE=default.json renovate-config-validator"
+    "test": "RENOVATE_CONFIG_FILE=default.json renovate-config-validator"
   },
   "repository": {
     "type": "git",
