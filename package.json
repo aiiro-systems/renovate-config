@@ -1,0 +1,22 @@
+{
+  "name": "renovate-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "validate": "RENOVATE_CONFIG_FILE=default.json renovate-config-validator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiiro-systems/renovate-config.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aiiro-systems/renovate-config/issues"
+  },
+  "homepage": "https://github.com/aiiro-systems/renovate-config#readme",
+  "dependencies": {
+    "renovate": "^25.59.1"
+  }
+}
