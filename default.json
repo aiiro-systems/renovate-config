@@ -4,8 +4,14 @@
     "config:base",
     ":timezone(Asia/Tokyo)",
     ":preserveSemverRanges",
+    ":automergeLinters",
+    ":automergeMinor",
     ":automergeTypes",
-    ":automergeMinor"
+    ":maintainLockFilesMonthly",
+    ":rebaseStalePrs",
+    "group:allNonMajor",
+    "group:definitelyTyped",
+    "group:linters"
   ],
   "baseBranches": [
     "develop"
